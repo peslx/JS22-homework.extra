@@ -8,14 +8,20 @@ num = String(num).split("");
 
 let multiNum = 1;
 
-num.forEach((element) => {
-  multiNum *= element;
+// num.forEach((element) => {
+//   multiNum *= element;
+// });
+
+// console.log(multiNum);
+
+num = num.reduce((a, b) => {
+  return a * b;
 });
 
-console.log(multiNum);
-
 // 3
-multiNum **= 3;
+// multiNum **= 3;
+num **= 3;
 
 // 4
-console.log(String(multiNum).slice(0, 2));
+// console.log(String(multiNum).slice(0, 2));
+console.log(String(num).slice(0, 2));
